@@ -3,7 +3,438 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- phosphor icon cdn regular -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
+    <!-- Google poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="layout">
+      <aside class="aside">
+        <div class="menu">
+          <h2><i class="ph ph-list"></i></h2>
+        </div>
+        <ul class="dashboard-menus">
+          <li class="item active">
+            <i class="ph ph-house-line"></i>
+          </li>
+          <li class="item">
+            <i class="ph ph-user-circle"></i>
+          </li>
+          <li class="item">
+            <i class="ph ph-chat"></i>
+          </li>
+          <li class="item">
+            <i class="ph ph-calendar-dots"></i>
+          </li>
+          <li class="item">
+            <i class="ph ph-clock"></i>
+          </li>
+          <li class="item">
+            <i class="ph ph-gear"></i>
+          </li>
+        </ul>
+      </aside>
+
+      <header class="header layout-inner-container">
+        <div class="logo-search">
+          <h2>Portfolio</h2>
+          <div class="relative input-search">
+            <input type="search" placeholder="Search" />
+            <i class="ph ph-magnifying-glass absolute"></i>
+          </div>
+        </div>
+
+        <div class="user-profile-part">
+          <div class="add-bell flex items-center">
+            <div class="plus-icon">
+              <i class="ph ph-plus"></i>
+            </div>
+            <div class="bell-icon relative">
+              <i class="ph ph-bell"></i>
+              <span class="absolute"></span>
+            </div>
+          </div>
+
+          <hr class="vertical-devider" />
+          <div class="profile-with-name flex items-center">
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="profile-avatar"
+            />
+            <h3>Hira R</h3>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="white-bg layout-inner-container-2">
+          <!-- title and date -->
+          <div class="project-glance-date flex items-center">
+            <h3>Projects</h3>
+            <p>July, 2020</p>
+          </div>
+
+          <!-- main total count dashboard -->
+          <div class="flex items-center dashboard-glance">
+            <div class="dashboard-priview-count flex items-center">
+              <div class="in-progress">
+                <p class="count__"><strong>45</strong></p>
+                <p class="status">In Progress</p>
+              </div>
+              <div class="in-process">
+                <p class="count__"><strong>12</strong></p>
+                <p class="status">In Process</p>
+              </div>
+              <div class="upcoming">
+                <p class="count__"><strong>10</strong></p>
+                <p class="status">Upcoming</p>
+              </div>
+              <div class="Total-project">
+                <p class="count__"><strong>10</strong></p>
+                <p class="status">Total Project</p>
+              </div>
+            </div>
+
+            <div class="layout-handler">
+              <i class="ph ph-list me-2"></i>
+              <i class="ph ph-circles-four"></i>
+            </div>
+          </div>
+
+          <!-- working card (web - designing) -->
+
+          <div class="card-container">
+            <!-- card - 1 -->
+
+            <!-- card - 1 -->
+            <div class="web-design-card">
+              <div class="padding-wrapepr">
+                <div class="web-date flex items-center">
+                  <p>July 2,2020</p>
+                  <i class="ph-fill ph-dots-three-outline-vertical"></i>
+                </div>
+                <!-- heading -->
+                <div class="card-heading">
+                  <h5>Web Designing</h5>
+                  <p>Prototyping</p>
+                </div>
+                <!-- progress time-line -->
+                <div class="progress-time-line">
+                  <p class="pro-tag"><strong>Progress</strong></p>
+                  <span class="progress-line"></span>
+                  <p class="per">90%</p>
+                </div>
+              </div>
+
+              <div class="card-footer flex items-center">
+                <div class="join-avatar">
+                  <img
+                    src="https://images.unsplash.com/profile-1445470968232-3b6626618f2f?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+                    alt="overlap-image"
+                    class="first_img"
+                  />
+                  <img
+                    src="https://images.unsplash.com/profile-1445470968232-3b6626618f2f?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+                    alt="overlap-image"
+                  />
+                  <i class="ph ph-plus"></i>
+                </div>
+                <button type="button" class="day-2-left-btn">
+                  2 Days left
+                </button>
+              </div>
+            </div>
+
+            <!-- card - 2 -->
+            <div class="mobile-app">
+              <div class="padding-wrapepr">
+                <div class="web-date flex items-center">
+                  <p>July 5,2020</p>
+                  <i class="ph-fill ph-dots-three-outline-vertical"></i>
+                </div>
+                <!-- heading -->
+                <div class="card-heading">
+                  <h5>Mobile App</h5>
+                  <p>Shopping</p>
+                </div>
+                <!-- progress time-line -->
+                <div class="progress-time-line">
+                  <p class="pro-tag"><strong>Progress</strong></p>
+                  <span class="progress-line"></span>
+                  <p class="per">30%</p>
+                </div>
+              </div>
+
+              <div class="card-footer flex items-center">
+                <div class="join-avatar">
+                  <img
+                    src="https://images.unsplash.com/profile-1445470968232-3b6626618f2f?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+                    alt="overlap-image"
+                    class="first_img"
+                  />
+                  <img
+                    src="https://images.unsplash.com/profile-1445470968232-3b6626618f2f?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+                    alt="overlap-image"
+                  />
+                  <i class="ph ph-plus"></i>
+                </div>
+                <button type="button" class="day-2-left-btn">
+                  3 week left
+                </button>
+              </div>
+            </div>
+
+            <!-- card - 3 -->
+            <div class="dashboard-medical">
+              <div class="padding-wrapepr">
+                <div class="web-date flex items-center">
+                  <p>July 10,2020</p>
+                  <i class="ph-fill ph-dots-three-outline-vertical"></i>
+                </div>
+                <!-- heading -->
+                <div class="card-heading">
+                  <h5>Dashboard</h5>
+                  <p>Medical</p>
+                </div>
+                <!-- progress time-line -->
+                <div class="progress-time-line">
+                  <p class="pro-tag"><strong>Progress</strong></p>
+                  <span class="progress-line"></span>
+                  <p class="per">50%</p>
+                </div>
+              </div>
+
+              <div class="card-footer flex items-center">
+                <div class="join-avatar">
+                  <img
+                    src="https://images.unsplash.com/profile-1445470968232-3b6626618f2f?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+                    alt="overlap-image"
+                    class="first_img"
+                  />
+                  <img
+                    src="https://images.unsplash.com/profile-1445470968232-3b6626618f2f?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+                    alt="overlap-image"
+                  />
+                  <i class="ph ph-plus"></i>
+                </div>
+                <button type="button" class="day-2-left-btn">
+                  3 week left
+                </button>
+              </div>
+            </div>
+
+            <!-- card - 4 -->
+            <div class="web-designing-card">
+              <div class="padding-wrapepr">
+                <div class="web-date flex items-center">
+                  <p>July 15,2020</p>
+                  <i class="ph-fill ph-dots-three-outline-vertical"></i>
+                </div>
+                <!-- heading -->
+                <div class="card-heading">
+                  <h5>Web Designing</h5>
+                  <p>Wireframing</p>
+                </div>
+                <!-- progress time-line -->
+                <div class="progress-time-line">
+                  <p class="pro-tag"><strong>Progress</strong></p>
+                  <span class="progress-line"></span>
+                  <p class="per">20%</p>
+                </div>
+              </div>
+
+              <div class="card-footer flex items-center">
+                <div class="join-avatar">
+                  <img
+                    src="https://images.unsplash.com/profile-1445470968232-3b6626618f2f?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+                    alt="overlap-image"
+                    class="first_img"
+                  />
+                  <img
+                    src="https://images.unsplash.com/profile-1445470968232-3b6626618f2f?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+                    alt="overlap-image"
+                  />
+                  <i class="ph ph-plus"></i>
+                </div>
+                <button type="button" class="day-2-left-btn">
+                  3 Days left
+                </button>
+              </div>
+            </div>
+
+            <!-- card - 5 -->
+            <div class="web-designing-card-5">
+              <div class="padding-wrapepr">
+                <div class="web-date flex items-center">
+                  <p>July 15,2020</p>
+                  <i class="ph-fill ph-dots-three-outline-vertical"></i>
+                </div>
+                <!-- heading -->
+                <div class="card-heading">
+                  <h5>Web Designing</h5>
+                  <p>Wireframing</p>
+                </div>
+                <!-- progress time-line -->
+                <div class="progress-time-line">
+                  <p class="pro-tag"><strong>Progress</strong></p>
+                  <span class="progress-line"></span>
+                  <p class="per">20%</p>
+                </div>
+              </div>
+
+              <div class="card-footer flex items-center">
+                <div class="join-avatar">
+                  <img
+                    src="https://images.unsplash.com/profile-1445470968232-3b6626618f2f?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+                    alt="overlap-image"
+                    class="first_img"
+                  />
+                  <img
+                    src="https://images.unsplash.com/profile-1445470968232-3b6626618f2f?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+                    alt="overlap-image"
+                  />
+                  <i class="ph ph-plus"></i>
+                </div>
+                <button type="button" class="day-2-left-btn">
+                  3 Days left
+                </button>
+              </div>
+            </div>
+
+            <!-- card - 6 -->
+            <div class="mobile-app">
+              <div class="padding-wrapepr">
+                <div class="web-date flex items-center">
+                  <p>July 15,2020</p>
+                  <i class="ph-fill ph-dots-three-outline-vertical"></i>
+                </div>
+                <!-- heading -->
+                <div class="card-heading">
+                  <h5>Web Designing</h5>
+                  <p>Wireframing</p>
+                </div>
+                <!-- progress time-line -->
+                <div class="progress-time-line">
+                  <p class="pro-tag"><strong>Progress</strong></p>
+                  <span class="progress-line"></span>
+                  <p class="per">20%</p>
+                </div>
+              </div>
+
+              <div class="card-footer flex items-center">
+                <div class="join-avatar">
+                  <img
+                    src="https://images.unsplash.com/profile-1445470968232-3b6626618f2f?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+                    alt="overlap-image"
+                    class="first_img"
+                  />
+                  <img
+                    src="https://images.unsplash.com/profile-1445470968232-3b6626618f2f?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+                    alt="overlap-image"
+                  />
+                  <i class="ph ph-plus"></i>
+                </div>
+                <button type="button" class="day-2-left-btn">
+                  3 Days left
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- chat contart chat part -->
+        </div>
+        <div class="chat-container">
+          <div class="chat-header flex items-center">
+            <h3>Client Messages</h3>
+            <div class="client-icon">
+              <i class="ph ph-magnifying-glass"></i>
+              <i class="ph-fill ph-dots-three-outline-vertical"></i>
+            </div>
+          </div>
+
+
+          <!-- client chat list -->
+          <div class="client-chat">
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="clinet-profile"
+              class="profile-user-img"
+            />
+
+            <div class="full-width">
+              <div class="user-name">
+                <h4>David</h4>
+                <i class="ph ph-star"></i>
+              </div>
+              <p class="last-user-message">
+                Hey tell me ur response
+              </p>
+              <p class="text-end">21 July</p>
+            </div>
+          </div>
+
+
+          <div class="client-chat">
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="clinet-profile"
+              class="profile-user-img"
+            />
+
+            <div class="full-width">
+              <div class="user-name">
+                <h4>Stephanie</h4>
+                <i class="ph ph-star"></i>
+              </div>
+              <p class="last-user-message">
+                I got your first assignment. It was quite good You can start work on next assignment
+              </p>
+              <p class="text-end">وايال 19 </p>
+            </div>
+          </div>
+
+
+          <div class="client-chat">
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="clinet-profile"
+              class="profile-user-img"
+            />
+
+            <div class="full-width">
+              <div class="user-name">
+                <h4>William</h4>
+                <i class="ph ph-star"></i>
+              </div>
+              <p class="last-user-message">
+                I want some changes in previous work you sent me. Waiting for your reply.
+              </p>
+              <p class="text-end">17 July</p>
+            </div>
+          </div>
+      
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
