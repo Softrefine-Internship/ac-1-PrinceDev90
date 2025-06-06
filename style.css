@@ -18,7 +18,7 @@
 
 body {
   background-color: #f3f6fd;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .layout {
@@ -65,12 +65,13 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  gap: 100px;
+  gap: 209px;
 }
 .header .logo-search .input-search input {
   background-color: white;
   border: none;
-  width: 300px;
+  width: 420px;
+  padding-right: 20px;
   padding-block: 12px;
   border-radius: 50rem;
   padding-left: 45px;
@@ -109,7 +110,7 @@ body {
 }
 .dashboard-menus .item i {
   font-size: 28px;
-  color: rgb(91, 91, 91);
+  color: rgb(99, 99, 99);
 }
 .dashboard-menus .item:hover {
   background-color: #151522;
@@ -124,6 +125,7 @@ body {
 .menu {
   margin-bottom: 60px;
   text-align: center;
+  cursor: pointer;
 }
 
 .user-profile-part {
@@ -137,7 +139,7 @@ body {
 .user-profile-part .vertical-devider {
   border: none;
   padding: 0.45px;
-  background-color: #151522;
+  background-color: rgba(80, 80, 80, 0.7);
   height: 40px;
 }
 
@@ -159,6 +161,7 @@ body {
 }
 
 .bell-icon i {
+  cursor: pointer;
   font-size: 24px;
   color: #151522;
 }
@@ -174,6 +177,7 @@ body {
 .profile-with-name {
   gap: 10px;
   width: 100%;
+  cursor: pointer;
 }
 .profile-with-name h3 {
   width: 62px;
@@ -202,6 +206,7 @@ body {
 .project-glance-date {
   justify-content: space-between;
   margin-bottom: 3rem;
+  color: rgba(21, 21, 34, 0.8862745098);
 }
 .project-glance-date p {
   font-weight: 600;
@@ -219,16 +224,55 @@ body {
 .dashboard-priview-count {
   gap: 60px;
 }
+.dashboard-priview-count .in-progress {
+  position: relative;
+}
+.dashboard-priview-count .in-progress .status::after {
+  content: "";
+  height: 6px;
+  position: absolute;
+  width: 6px;
+  bottom: 5px;
+  right: -33px;
+  border-radius: 50%;
+  border: 1px solid rgb(35, 35, 35);
+}
+.dashboard-priview-count .in-process {
+  position: relative;
+}
+.dashboard-priview-count .in-process .status::after {
+  content: "";
+  height: 6px;
+  position: absolute;
+  width: 6px;
+  bottom: 5px;
+  right: -33px;
+  border-radius: 50%;
+  border: 1px solid rgb(35, 35, 35);
+}
+.dashboard-priview-count .upcoming {
+  position: relative;
+}
+.dashboard-priview-count .upcoming .status::after {
+  content: "";
+  height: 6px;
+  position: absolute;
+  width: 6px;
+  bottom: 5px;
+  right: -33px;
+  border-radius: 50%;
+  border: 1px solid rgb(35, 35, 35);
+}
 
 .count__ {
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   color: #151522;
   font-size: 18px;
+  font-weight: 500;
 }
 
 .status {
-  color: #151522;
-  opacity: 0.9;
+  color: rgb(35, 35, 35);
   font-size: 14px;
 }
 
@@ -259,24 +303,29 @@ body {
 }
 .card-container .web-design-card .padding-wrapepr .web-date p {
   font-size: 12px;
-  color: #151522;
+  color: rgb(35, 35, 35);
+}
+.card-container .web-design-card .padding-wrapepr .web-date i {
+  cursor: pointer;
 }
 .card-container .web-design-card .padding-wrapepr .card-heading {
   margin-bottom: 10px;
 }
 .card-container .web-design-card .padding-wrapepr .card-heading h5 {
   font-size: 16px;
+  margin-bottom: 5px;
   text-align: center;
-  font-weight: 600;
-  margin-bottom: 8px;
+  font-weight: 700;
 }
 .card-container .web-design-card .padding-wrapepr .card-heading p {
   font-size: 14px;
+  font-weight: 600;
+  color: rgb(35, 35, 35);
   text-align: center;
 }
 .card-container .web-design-card .padding-wrapepr .progress-time-line .pro-tag {
   font-size: 13px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .card-container .web-design-card .padding-wrapepr .progress-time-line .progress-line {
   width: 100%;
@@ -361,24 +410,29 @@ body {
 }
 .card-container .mobile-app .padding-wrapepr .web-date p {
   font-size: 12px;
-  color: #151522;
+  color: rgb(35, 35, 35);
+}
+.card-container .mobile-app .padding-wrapepr .web-date i {
+  cursor: pointer;
 }
 .card-container .mobile-app .padding-wrapepr .card-heading {
   margin-bottom: 10px;
 }
 .card-container .mobile-app .padding-wrapepr .card-heading h5 {
   font-size: 16px;
+  margin-bottom: 5px;
   text-align: center;
-  font-weight: 600;
-  margin-bottom: 8px;
+  font-weight: 700;
 }
 .card-container .mobile-app .padding-wrapepr .card-heading p {
   font-size: 14px;
+  font-weight: 600;
+  color: rgb(35, 35, 35);
   text-align: center;
 }
 .card-container .mobile-app .padding-wrapepr .progress-time-line .pro-tag {
   font-size: 13px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .card-container .mobile-app .padding-wrapepr .progress-time-line .progress-line {
   width: 100%;
@@ -463,24 +517,29 @@ body {
 }
 .card-container .dashboard-medical .padding-wrapepr .web-date p {
   font-size: 12px;
-  color: #151522;
+  color: rgb(35, 35, 35);
+}
+.card-container .dashboard-medical .padding-wrapepr .web-date i {
+  cursor: pointer;
 }
 .card-container .dashboard-medical .padding-wrapepr .card-heading {
   margin-bottom: 10px;
 }
 .card-container .dashboard-medical .padding-wrapepr .card-heading h5 {
   font-size: 16px;
+  margin-bottom: 5px;
   text-align: center;
-  font-weight: 600;
-  margin-bottom: 8px;
+  font-weight: 700;
 }
 .card-container .dashboard-medical .padding-wrapepr .card-heading p {
   font-size: 14px;
+  font-weight: 600;
+  color: rgb(35, 35, 35);
   text-align: center;
 }
 .card-container .dashboard-medical .padding-wrapepr .progress-time-line .pro-tag {
   font-size: 13px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .card-container .dashboard-medical .padding-wrapepr .progress-time-line .progress-line {
   width: 100%;
@@ -565,24 +624,29 @@ body {
 }
 .card-container .web-designing-card .padding-wrapepr .web-date p {
   font-size: 12px;
-  color: #151522;
+  color: rgb(35, 35, 35);
+}
+.card-container .web-designing-card .padding-wrapepr .web-date i {
+  cursor: pointer;
 }
 .card-container .web-designing-card .padding-wrapepr .card-heading {
   margin-bottom: 10px;
 }
 .card-container .web-designing-card .padding-wrapepr .card-heading h5 {
   font-size: 16px;
+  margin-bottom: 5px;
   text-align: center;
-  font-weight: 600;
-  margin-bottom: 8px;
+  font-weight: 700;
 }
 .card-container .web-designing-card .padding-wrapepr .card-heading p {
   font-size: 14px;
+  font-weight: 600;
+  color: rgb(35, 35, 35);
   text-align: center;
 }
 .card-container .web-designing-card .padding-wrapepr .progress-time-line .pro-tag {
   font-size: 13px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .card-container .web-designing-card .padding-wrapepr .progress-time-line .progress-line {
   width: 100%;
@@ -667,24 +731,29 @@ body {
 }
 .card-container .web-designing-card-5 .padding-wrapepr .web-date p {
   font-size: 12px;
-  color: #151522;
+  color: rgb(35, 35, 35);
+}
+.card-container .web-designing-card-5 .padding-wrapepr .web-date i {
+  cursor: pointer;
 }
 .card-container .web-designing-card-5 .padding-wrapepr .card-heading {
   margin-bottom: 10px;
 }
 .card-container .web-designing-card-5 .padding-wrapepr .card-heading h5 {
   font-size: 16px;
+  margin-bottom: 5px;
   text-align: center;
-  font-weight: 600;
-  margin-bottom: 8px;
+  font-weight: 700;
 }
 .card-container .web-designing-card-5 .padding-wrapepr .card-heading p {
   font-size: 14px;
+  font-weight: 600;
+  color: rgb(35, 35, 35);
   text-align: center;
 }
 .card-container .web-designing-card-5 .padding-wrapepr .progress-time-line .pro-tag {
   font-size: 13px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .card-container .web-designing-card-5 .padding-wrapepr .progress-time-line .progress-line {
   width: 100%;
@@ -732,7 +801,7 @@ body {
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
-  background-color: rgb(255, 58, 125.1590909091);
+  background-color: rgb(103.5384615385, 89.7692307692, 241.2307692308);
   height: 20px;
   border-radius: 50%;
   width: 20px;
@@ -746,7 +815,7 @@ body {
 }
 .card-container .web-designing-card-5 .card-footer .day-2-left-btn {
   cursor: pointer;
-  color: rgb(255, 58, 125.1590909091);
+  color: rgb(103.5384615385, 89.7692307692, 241.2307692308);
   background-color: #ffffff;
   border: none;
   font-weight: bold;
@@ -763,9 +832,9 @@ body {
 .chat-container .chat-header {
   justify-content: space-between;
   padding: 0px 30px;
-  margin-bottom: 20px;
+  color: rgba(21, 21, 34, 0.8862745098);
   padding-bottom: 20px;
-  border-bottom: 1px solid #151522;
+  border-bottom: 1px solid rgba(80, 80, 80, 0.5);
 }
 .chat-container .client-icon {
   display: flex;
@@ -773,6 +842,13 @@ body {
 }
 .chat-container .client-icon i {
   font-size: 18px;
+}
+
+.client-chat-container {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
 }
 
 .client-chat {
@@ -789,11 +865,12 @@ body {
 .text-end {
   text-align: end;
   font-size: 12px;
-  color: rgb(80, 80, 80);
+  color: rgb(35, 35, 35);
 }
 
 .last-user-message {
-  font-size: 12px;
+  font-size: 14px;
+  color: rgb(35, 35, 35);
 }
 
 .full-width {
@@ -803,7 +880,8 @@ body {
 .user-name {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+  color: rgba(21, 21, 34, 0.8862745098);
   justify-content: space-between;
 }
 

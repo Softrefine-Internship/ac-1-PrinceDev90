@@ -34,7 +34,9 @@ $--color--7: #e9e7fd;
 
 body {
   background-color: $--color--1;
-  font-family: "Open Sans", sans-serif;
+
+  // font-family: "Open Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   // line-height: 1;
 }
 
@@ -85,13 +87,13 @@ body {
     align-items: center;
     width: 100%;
     // padding: 0px 40px;
-    gap: 100px;
+    gap: 209px;
 
     .input-search input {
       background-color: white;
       border: none;
-      width: 300px;
-      // width: 100%;
+      width: 420px;
+      padding-right: 20px;
       padding-block: 12px;
       border-radius: 50rem;
       padding-left: 45px;
@@ -141,7 +143,7 @@ body {
 
     i {
       font-size: 28px;
-      color: rgb(91, 91, 91);
+      color: rgb(99, 99, 99);
     }
 
     &:hover {
@@ -161,6 +163,7 @@ body {
 .menu {
   margin-bottom: 60px;
   text-align: center;
+  cursor: pointer;
 }
 
 .user-profile-part {
@@ -175,7 +178,7 @@ body {
   .vertical-devider {
     border: none;
     padding: 0.45px;
-    background-color: $--color--2;
+    background-color: rgba(80, 80, 80, 0.7);
     height: 40px;
   }
 }
@@ -199,6 +202,7 @@ body {
 
 .bell-icon {
   i {
+    cursor: pointer;
     font-size: 24px;
     color: $--color--2;
   }
@@ -216,6 +220,7 @@ body {
 .profile-with-name {
   gap: 10px;
   width: 100%;
+  cursor: pointer;
 
   h3 {
     width: 62px;
@@ -251,6 +256,7 @@ body {
 .project-glance-date {
   justify-content: space-between;
   margin-bottom: 3rem;
+  color: rgba(21, 21, 34, 0.8862745098);
 
   p {
     font-weight: 600;
@@ -269,17 +275,62 @@ body {
 
 .dashboard-priview-count {
   gap: 60px;
+
+  .in-progress {
+    position: relative;
+
+    .status::after {
+      content: "";
+      height: 6px;
+      position: absolute;
+      width: 6px;
+      bottom: 5px;
+      right: -33px;
+      border-radius: 50%;
+      border: 1px solid rgb(35, 35, 35);
+    }
+  }
+
+  .in-process {
+    position: relative;
+
+    .status::after {
+      content: "";
+      height: 6px;
+      position: absolute;
+      width: 6px;
+      bottom: 5px;
+      right: -33px;
+      border-radius: 50%;
+      border: 1px solid rgb(35, 35, 35);
+    }
+  }
+
+  .upcoming {
+    position: relative;
+
+    .status::after {
+      content: "";
+      height: 6px;
+      position: absolute;
+      width: 6px;
+      bottom: 5px;
+      right: -33px;
+      border-radius: 50%;
+      border: 1px solid rgb(35, 35, 35);
+    }
+  }
 }
 
 .count__ {
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   color: $--color--2;
   font-size: 18px;
+  font-weight: 500;
 }
 
 .status {
-  color: $--color--2;
-  opacity: 0.9;
+  color: rgb(35, 35, 35);
   font-size: 14px;
 }
 
@@ -310,7 +361,11 @@ body {
 
         p {
           font-size: 12px;
-          color: $--color--2;
+          color: rgb(35, 35, 35);
+        }
+
+        i {
+          cursor: pointer;
         }
       }
 
@@ -320,20 +375,22 @@ body {
 
       .card-heading h5 {
         font-size: 16px;
+        margin-bottom: 5px;
         text-align: center;
-        font-weight: 600;
-        margin-bottom: 8px;
+        font-weight: 700;
       }
 
       .card-heading p {
         font-size: 14px;
+        font-weight: 600;
+        color: rgb(35, 35, 35);
         text-align: center;
       }
 
       .progress-time-line {
         .pro-tag {
           font-size: 13px;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
         }
 
         .progress-line {
@@ -430,7 +487,10 @@ body {
 
         p {
           font-size: 12px;
-          color: $--color--2;
+          color: rgb(35, 35, 35);
+        }
+        i {
+          cursor: pointer;
         }
       }
 
@@ -440,20 +500,22 @@ body {
 
       .card-heading h5 {
         font-size: 16px;
+        margin-bottom: 5px;
         text-align: center;
-        font-weight: 600;
-        margin-bottom: 8px;
+        font-weight: 700;
       }
 
       .card-heading p {
         font-size: 14px;
+        font-weight: 600;
+        color: rgb(35, 35, 35);
         text-align: center;
       }
 
       .progress-time-line {
         .pro-tag {
           font-size: 13px;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
         }
 
         .progress-line {
@@ -552,7 +614,10 @@ body {
 
         p {
           font-size: 12px;
-          color: $--color--2;
+          color: rgb(35, 35, 35);
+        }
+        i {
+          cursor: pointer;
         }
       }
 
@@ -562,20 +627,22 @@ body {
 
       .card-heading h5 {
         font-size: 16px;
+        margin-bottom: 5px;
         text-align: center;
-        font-weight: 600;
-        margin-bottom: 8px;
+        font-weight: 700;
       }
 
       .card-heading p {
         font-size: 14px;
+        font-weight: 600;
+        color: rgb(35, 35, 35);
         text-align: center;
       }
 
       .progress-time-line {
         .pro-tag {
           font-size: 13px;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
         }
 
         .progress-line {
@@ -674,7 +741,10 @@ body {
 
         p {
           font-size: 12px;
-          color: $--color--2;
+          color: rgb(35, 35, 35);
+        }
+        i {
+          cursor: pointer;
         }
       }
 
@@ -684,20 +754,22 @@ body {
 
       .card-heading h5 {
         font-size: 16px;
+        margin-bottom: 5px;
         text-align: center;
-        font-weight: 600;
-        margin-bottom: 8px;
+        font-weight: 700;
       }
 
       .card-heading p {
         font-size: 14px;
+        font-weight: 600;
+        color: rgb(35, 35, 35);
         text-align: center;
       }
 
       .progress-time-line {
         .pro-tag {
           font-size: 13px;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
         }
 
         .progress-line {
@@ -796,7 +868,10 @@ body {
 
         p {
           font-size: 12px;
-          color: $--color--2;
+          color: rgb(35, 35, 35);
+        }
+        i {
+          cursor: pointer;
         }
       }
 
@@ -806,20 +881,22 @@ body {
 
       .card-heading h5 {
         font-size: 16px;
+        margin-bottom: 5px;
         text-align: center;
-        font-weight: 600;
-        margin-bottom: 8px;
+        font-weight: 700;
       }
 
       .card-heading p {
         font-size: 14px;
+        font-weight: 600;
+        color: rgb(35, 35, 35);
         text-align: center;
       }
 
       .progress-time-line {
         .pro-tag {
           font-size: 13px;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
         }
 
         .progress-line {
@@ -875,7 +952,7 @@ body {
         font-size: 12px;
         font-weight: 600;
         cursor: pointer;
-        background-color: darken($--color--6, 30%);
+        background-color: darken($--color--7, 30%);
 
         height: 20px;
         border-radius: 50%;
@@ -891,7 +968,7 @@ body {
 
       .day-2-left-btn {
         cursor: pointer;
-        color: darken($--color--6, 30%);
+        color: darken($--color--7, 30%);
 
         background-color: $--color--white;
         border: none;
@@ -914,9 +991,10 @@ body {
   .chat-header {
     justify-content: space-between;
     padding: 0px 30px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    color: rgba(21, 21, 34, 0.8862745098);
     padding-bottom: 20px;
-    border-bottom: 1px solid $--color--2;
+    border-bottom: 1px solid rgb(80, 80, 80, 0.5);
   }
 
   .client-icon {
@@ -928,6 +1006,13 @@ body {
     }
   }
   // height: 100%;
+}
+
+.client-chat-container {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
 }
 
 .client-chat {
@@ -945,11 +1030,12 @@ body {
 .text-end {
   text-align: end;
   font-size: 12px;
-  color: rgb(80, 80, 80);
+  color: rgb(35, 35, 35);
 }
 
 .last-user-message {
-  font-size: 12px;
+  font-size: 14px;
+  color: rgb(35, 35, 35);
 }
 
 .full-width {
@@ -959,7 +1045,8 @@ body {
 .user-name {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+  color: rgba(21, 21, 34, 0.8862745098);
   justify-content: space-between;
 }
 
